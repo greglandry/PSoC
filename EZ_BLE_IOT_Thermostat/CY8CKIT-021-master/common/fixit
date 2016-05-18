@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "#include \"BLEIOT_BLEIOT.h\"" > BLEIOT_BLEIOT.c
+cat ../firmware/4MTestI2CUart.cydsn/Generated_Source/PSoC4/BLEIOT_BLEIOT.c >> BLEIOT_BLEIOT.c
+cp ../firmware/4MTestI2CUart.cydsn/Generated_Source/PSoC4/BLEIOT_BLEIOT.h .

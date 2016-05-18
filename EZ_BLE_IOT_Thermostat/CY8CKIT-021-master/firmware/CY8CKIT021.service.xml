@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-16"?>
+<CyProfileTreeItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="CyService" ID="57" DisplayName="CY8CKIT021" Name="Custom Service" Type="org.bluetooth.service.custom" UUID="0000000000001000800000805F9B3400">
+  <CyCharacteristic ID="58" DisplayName="blue" Name="Custom Characteristic" Type="org.bluetooth.characteristic.custom" UUID="0000000000001000800000805F9B3401">
+    <CyDescriptor ID="59" DisplayName="CCCD" Name="Client Characteristic Configuration" Type="org.bluetooth.descriptor.gatt.client_characteristic_configuration" UUID="2902">
+      <Field Name="Properties">
+        <DataFormat>16bit</DataFormat>
+        <ByteLength>2</ByteLength>
+        <Range>
+          <IsDeclared>true</IsDeclared>
+          <Minimum>0</Minimum>
+          <Maximum>3</Maximum>
+        </Range>
+        <ValueType>BITFIELD</ValueType>
+        <Bit>
+          <Index>0</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Notifications disabled" />
+            <Enumeration key="1" value="Notifications enabled" />
+          </Enumerations>
+        </Bit>
+        <Bit>
+          <Index>1</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Indications disabled" />
+            <Enumeration key="1" value="Indications enabled" />
+          </Enumerations>
+        </Bit>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="true" Mandatory="false" />
+      </Properties>
+      <Permission>
+        <AccessPermission>READ_WRITE</AccessPermission>
+      </Permission>
+    </CyDescriptor>
+    <CyDescriptor ID="60" DisplayName="Characteristic User Description" Name="Characteristic User Description" Type="org.bluetooth.descriptor.gatt.characteristic_user_description" UUID="2901">
+      <Field Name="User Description">
+        <DataFormat>utf8s</DataFormat>
+        <ByteLength>14</ByteLength>
+        <ValueType>BASIC</ValueType>
+        <GeneralValue>Blue LED State</GeneralValue>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="false" Mandatory="false" />
+      </Properties>
+      <Permission />
+    </CyDescriptor>
+    <Field Name="blue">
+      <DataFormat>uint8</DataFormat>
+      <ByteLength>1</ByteLength>
+      <ValueType>BASIC</ValueType>
+      <ArrayValue />
+    </Field>
+    <Properties>
+      <Property Type="BROADCAST" Present="false" Mandatory="false" />
+      <Property Type="READ" Present="true" Mandatory="false" />
+      <Property Type="WRITE" Present="true" Mandatory="false" />
+      <Property Type="WRITE_WITHOUT_RESPONSE" Present="false" Mandatory="false" />
+      <Property Type="NOTIFY" Present="true" Mandatory="false" />
+      <Property Type="INDICATE" Present="false" Mandatory="false" />
+      <Property Type="AUTHENTICATED_SIGNED_WRITES" Present="false" Mandatory="false" />
+      <Property Type="RELIABLE_WRITE" Present="false" Mandatory="false" />
+      <Property Type="WRITABLE_AUXILIARIES" Present="false" Mandatory="false" />
+    </Properties>
+    <Permission>
+      <AccessPermission>READ_WRITE</AccessPermission>
+    </Permission>
+  </CyCharacteristic>
+  <CyCharacteristic ID="61" DisplayName="led0" Name="Custom Characteristic" Type="org.bluetooth.characteristic.custom" UUID="0000000000001000800000805F9B3402">
+    <CyDescriptor ID="62" DisplayName="CCCD" Name="Client Characteristic Configuration" Type="org.bluetooth.descriptor.gatt.client_characteristic_configuration" UUID="2902">
+      <Field Name="Properties">
+        <DataFormat>16bit</DataFormat>
+        <ByteLength>2</ByteLength>
+        <Range>
+          <IsDeclared>true</IsDeclared>
+          <Minimum>0</Minimum>
+          <Maximum>3</Maximum>
+        </Range>
+        <ValueType>BITFIELD</ValueType>
+        <Bit>
+          <Index>0</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Notifications disabled" />
+            <Enumeration key="1" value="Notifications enabled" />
+          </Enumerations>
+        </Bit>
+        <Bit>
+          <Index>1</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Indications disabled" />
+            <Enumeration key="1" value="Indications enabled" />
+          </Enumerations>
+        </Bit>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="true" Mandatory="false" />
+      </Properties>
+      <Permission>
+        <AccessPermission>READ_WRITE</AccessPermission>
+      </Permission>
+    </CyDescriptor>
+    <CyDescriptor ID="63" DisplayName="Characteristic User Description" Name="Characteristic User Description" Type="org.bluetooth.descriptor.gatt.characteristic_user_description" UUID="2901">
+      <Field Name="User Description">
+        <DataFormat>utf8s</DataFormat>
+        <ByteLength>10</ByteLength>
+        <ValueType>BASIC</ValueType>
+        <GeneralValue>LED0 State</GeneralValue>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="false" Mandatory="false" />
+      </Properties>
+      <Permission />
+    </CyDescriptor>
+    <Field Name="New field">
+      <DataFormat>uint8</DataFormat>
+      <ByteLength>1</ByteLength>
+      <ValueType>BASIC</ValueType>
+      <ArrayValue />
+    </Field>
+    <Properties>
+      <Property Type="BROADCAST" Present="false" Mandatory="false" />
+      <Property Type="READ" Present="true" Mandatory="false" />
+      <Property Type="WRITE" Present="true" Mandatory="false" />
+      <Property Type="WRITE_WITHOUT_RESPONSE" Present="false" Mandatory="false" />
+      <Property Type="NOTIFY" Present="true" Mandatory="false" />
+      <Property Type="INDICATE" Present="false" Mandatory="false" />
+      <Property Type="AUTHENTICATED_SIGNED_WRITES" Present="false" Mandatory="false" />
+      <Property Type="RELIABLE_WRITE" Present="false" Mandatory="false" />
+      <Property Type="WRITABLE_AUXILIARIES" Present="false" Mandatory="false" />
+    </Properties>
+    <Permission>
+      <AccessPermission>READ_WRITE</AccessPermission>
+    </Permission>
+  </CyCharacteristic>
+  <CyCharacteristic ID="64" DisplayName="led1" Name="Custom Characteristic" Type="org.bluetooth.characteristic.custom" UUID="0000000000001000800000805F9B3403">
+    <CyDescriptor ID="65" DisplayName="CCCD" Name="Client Characteristic Configuration" Type="org.bluetooth.descriptor.gatt.client_characteristic_configuration" UUID="2902">
+      <Field Name="Properties">
+        <DataFormat>16bit</DataFormat>
+        <ByteLength>2</ByteLength>
+        <Range>
+          <IsDeclared>true</IsDeclared>
+          <Minimum>0</Minimum>
+          <Maximum>3</Maximum>
+        </Range>
+        <ValueType>BITFIELD</ValueType>
+        <Bit>
+          <Index>0</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Notifications disabled" />
+            <Enumeration key="1" value="Notifications enabled" />
+          </Enumerations>
+        </Bit>
+        <Bit>
+          <Index>1</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Indications disabled" />
+            <Enumeration key="1" value="Indications enabled" />
+          </Enumerations>
+        </Bit>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="true" Mandatory="false" />
+      </Properties>
+      <Permission>
+        <AccessPermission>READ_WRITE</AccessPermission>
+      </Permission>
+    </CyDescriptor>
+    <CyDescriptor ID="66" DisplayName="Characteristic User Description" Name="Characteristic User Description" Type="org.bluetooth.descriptor.gatt.characteristic_user_description" UUID="2901">
+      <Field Name="User Description">
+        <DataFormat>utf8s</DataFormat>
+        <ByteLength>10</ByteLength>
+        <ValueType>BASIC</ValueType>
+        <GeneralValue>LED1 State</GeneralValue>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="false" Mandatory="false" />
+      </Properties>
+      <Permission />
+    </CyDescriptor>
+    <Field Name="New field">
+      <DataFormat>uint8</DataFormat>
+      <ByteLength>1</ByteLength>
+      <ValueType>BASIC</ValueType>
+      <ArrayValue />
+    </Field>
+    <Properties>
+      <Property Type="BROADCAST" Present="false" Mandatory="false" />
+      <Property Type="READ" Present="true" Mandatory="false" />
+      <Property Type="WRITE" Present="true" Mandatory="false" />
+      <Property Type="WRITE_WITHOUT_RESPONSE" Present="false" Mandatory="false" />
+      <Property Type="NOTIFY" Present="true" Mandatory="false" />
+      <Property Type="INDICATE" Present="false" Mandatory="false" />
+      <Property Type="AUTHENTICATED_SIGNED_WRITES" Present="false" Mandatory="false" />
+      <Property Type="RELIABLE_WRITE" Present="false" Mandatory="false" />
+      <Property Type="WRITABLE_AUXILIARIES" Present="false" Mandatory="false" />
+    </Properties>
+    <Permission>
+      <AccessPermission>READ_WRITE</AccessPermission>
+    </Permission>
+  </CyCharacteristic>
+  <CyCharacteristic ID="67" DisplayName="button0" Name="Custom Characteristic" Type="org.bluetooth.characteristic.custom" UUID="0000000000001000800000805F9B3404">
+    <CyDescriptor ID="68" DisplayName="CCCD" Name="Client Characteristic Configuration" Type="org.bluetooth.descriptor.gatt.client_characteristic_configuration" UUID="2902">
+      <Field Name="Properties">
+        <DataFormat>16bit</DataFormat>
+        <ByteLength>2</ByteLength>
+        <Range>
+          <IsDeclared>true</IsDeclared>
+          <Minimum>0</Minimum>
+          <Maximum>3</Maximum>
+        </Range>
+        <ValueType>BITFIELD</ValueType>
+        <Bit>
+          <Index>0</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Notifications disabled" />
+            <Enumeration key="1" value="Notifications enabled" />
+          </Enumerations>
+        </Bit>
+        <Bit>
+          <Index>1</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Indications disabled" />
+            <Enumeration key="1" value="Indications enabled" />
+          </Enumerations>
+        </Bit>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="true" Mandatory="false" />
+      </Properties>
+      <Permission>
+        <AccessPermission>READ_WRITE</AccessPermission>
+      </Permission>
+    </CyDescriptor>
+    <CyDescriptor ID="69" DisplayName="Characteristic User Description" Name="Characteristic User Description" Type="org.bluetooth.descriptor.gatt.characteristic_user_description" UUID="2901">
+      <Field Name="User Description">
+        <DataFormat>utf8s</DataFormat>
+        <ByteLength>13</ByteLength>
+        <ValueType>BASIC</ValueType>
+        <GeneralValue>Button0 State</GeneralValue>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="false" Mandatory="false" />
+      </Properties>
+      <Permission />
+    </CyDescriptor>
+    <Field Name="New field">
+      <DataFormat>uint8</DataFormat>
+      <ByteLength>1</ByteLength>
+      <ValueType>BASIC</ValueType>
+      <ArrayValue />
+    </Field>
+    <Properties>
+      <Property Type="BROADCAST" Present="false" Mandatory="false" />
+      <Property Type="READ" Present="true" Mandatory="false" />
+      <Property Type="WRITE" Present="false" Mandatory="false" />
+      <Property Type="WRITE_WITHOUT_RESPONSE" Present="false" Mandatory="false" />
+      <Property Type="NOTIFY" Present="true" Mandatory="false" />
+      <Property Type="INDICATE" Present="false" Mandatory="false" />
+      <Property Type="AUTHENTICATED_SIGNED_WRITES" Present="false" Mandatory="false" />
+      <Property Type="RELIABLE_WRITE" Present="false" Mandatory="false" />
+      <Property Type="WRITABLE_AUXILIARIES" Present="false" Mandatory="false" />
+    </Properties>
+    <Permission />
+  </CyCharacteristic>
+  <CyCharacteristic ID="70" DisplayName="button1" Name="Custom Characteristic" Type="org.bluetooth.characteristic.custom" UUID="0000000000001000800000805F9B3405">
+    <CyDescriptor ID="71" DisplayName="CCCD" Name="Client Characteristic Configuration" Type="org.bluetooth.descriptor.gatt.client_characteristic_configuration" UUID="2902">
+      <Field Name="Properties">
+        <DataFormat>16bit</DataFormat>
+        <ByteLength>2</ByteLength>
+        <Range>
+          <IsDeclared>true</IsDeclared>
+          <Minimum>0</Minimum>
+          <Maximum>3</Maximum>
+        </Range>
+        <ValueType>BITFIELD</ValueType>
+        <Bit>
+          <Index>0</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Notifications disabled" />
+            <Enumeration key="1" value="Notifications enabled" />
+          </Enumerations>
+        </Bit>
+        <Bit>
+          <Index>1</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Indications disabled" />
+            <Enumeration key="1" value="Indications enabled" />
+          </Enumerations>
+        </Bit>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="true" Mandatory="false" />
+      </Properties>
+      <Permission>
+        <AccessPermission>READ_WRITE</AccessPermission>
+      </Permission>
+    </CyDescriptor>
+    <CyDescriptor ID="72" DisplayName="Characteristic User Description" Name="Characteristic User Description" Type="org.bluetooth.descriptor.gatt.characteristic_user_description" UUID="2901">
+      <Field Name="User Description">
+        <DataFormat>utf8s</DataFormat>
+        <ByteLength>13</ByteLength>
+        <ValueType>BASIC</ValueType>
+        <GeneralValue>Button1 State</GeneralValue>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="false" Mandatory="false" />
+      </Properties>
+      <Permission />
+    </CyDescriptor>
+    <Field Name="New field">
+      <DataFormat>uint8</DataFormat>
+      <ByteLength>1</ByteLength>
+      <ValueType>BASIC</ValueType>
+      <ArrayValue />
+    </Field>
+    <Properties>
+      <Property Type="BROADCAST" Present="false" Mandatory="false" />
+      <Property Type="READ" Present="true" Mandatory="false" />
+      <Property Type="WRITE" Present="false" Mandatory="false" />
+      <Property Type="WRITE_WITHOUT_RESPONSE" Present="false" Mandatory="false" />
+      <Property Type="NOTIFY" Present="true" Mandatory="false" />
+      <Property Type="INDICATE" Present="false" Mandatory="false" />
+      <Property Type="AUTHENTICATED_SIGNED_WRITES" Present="false" Mandatory="false" />
+      <Property Type="RELIABLE_WRITE" Present="false" Mandatory="false" />
+      <Property Type="WRITABLE_AUXILIARIES" Present="false" Mandatory="false" />
+    </Properties>
+    <Permission />
+  </CyCharacteristic>
+  <CyCharacteristic ID="73" DisplayName="tone" Name="Custom Characteristic" Type="org.bluetooth.characteristic.custom" UUID="0000000000001000800000805F9B3406">
+    <CyDescriptor ID="74" DisplayName="CCCD" Name="Client Characteristic Configuration" Type="org.bluetooth.descriptor.gatt.client_characteristic_configuration" UUID="2902">
+      <Field Name="Properties">
+        <DataFormat>16bit</DataFormat>
+        <ByteLength>2</ByteLength>
+        <Range>
+          <IsDeclared>true</IsDeclared>
+          <Minimum>0</Minimum>
+          <Maximum>3</Maximum>
+        </Range>
+        <ValueType>BITFIELD</ValueType>
+        <Bit>
+          <Index>0</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Notifications disabled" />
+            <Enumeration key="1" value="Notifications enabled" />
+          </Enumerations>
+        </Bit>
+        <Bit>
+          <Index>1</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Indications disabled" />
+            <Enumeration key="1" value="Indications enabled" />
+          </Enumerations>
+        </Bit>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="true" Mandatory="false" />
+      </Properties>
+      <Permission>
+        <AccessPermission>READ_WRITE</AccessPermission>
+      </Permission>
+    </CyDescriptor>
+    <CyDescriptor ID="75" DisplayName="Characteristic User Description" Name="Characteristic User Description" Type="org.bluetooth.descriptor.gatt.characteristic_user_description" UUID="2901">
+      <Field Name="User Description">
+        <DataFormat>utf8s</DataFormat>
+        <ByteLength>11</ByteLength>
+        <ValueType>BASIC</ValueType>
+        <GeneralValue>Buzzer Tone</GeneralValue>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="false" Mandatory="false" />
+      </Properties>
+      <Permission />
+    </CyDescriptor>
+    <Field Name="New field">
+      <DataFormat>uint16</DataFormat>
+      <ByteLength>2</ByteLength>
+      <ValueType>BASIC</ValueType>
+      <ArrayValue />
+    </Field>
+    <Properties>
+      <Property Type="BROADCAST" Present="false" Mandatory="false" />
+      <Property Type="READ" Present="true" Mandatory="false" />
+      <Property Type="WRITE" Present="true" Mandatory="false" />
+      <Property Type="WRITE_WITHOUT_RESPONSE" Present="false" Mandatory="false" />
+      <Property Type="NOTIFY" Present="true" Mandatory="false" />
+      <Property Type="INDICATE" Present="false" Mandatory="false" />
+      <Property Type="AUTHENTICATED_SIGNED_WRITES" Present="false" Mandatory="false" />
+      <Property Type="RELIABLE_WRITE" Present="false" Mandatory="false" />
+      <Property Type="WRITABLE_AUXILIARIES" Present="false" Mandatory="false" />
+    </Properties>
+    <Permission>
+      <AccessPermission>READ_WRITE</AccessPermission>
+    </Permission>
+  </CyCharacteristic>
+  <CyCharacteristic ID="76" DisplayName="trim" Name="Custom Characteristic" Type="org.bluetooth.characteristic.custom" UUID="0000000000001000800000805F9B3407">
+    <CyDescriptor ID="77" DisplayName="CCCD" Name="Client Characteristic Configuration" Type="org.bluetooth.descriptor.gatt.client_characteristic_configuration" UUID="2902">
+      <Field Name="Properties">
+        <DataFormat>16bit</DataFormat>
+        <ByteLength>2</ByteLength>
+        <Range>
+          <IsDeclared>true</IsDeclared>
+          <Minimum>0</Minimum>
+          <Maximum>3</Maximum>
+        </Range>
+        <ValueType>BITFIELD</ValueType>
+        <Bit>
+          <Index>0</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Notifications disabled" />
+            <Enumeration key="1" value="Notifications enabled" />
+          </Enumerations>
+        </Bit>
+        <Bit>
+          <Index>1</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Indications disabled" />
+            <Enumeration key="1" value="Indications enabled" />
+          </Enumerations>
+        </Bit>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="true" Mandatory="false" />
+      </Properties>
+      <Permission>
+        <AccessPermission>READ_WRITE</AccessPermission>
+      </Permission>
+    </CyDescriptor>
+    <CyDescriptor ID="78" DisplayName="Characteristic User Description" Name="Characteristic User Description" Type="org.bluetooth.descriptor.gatt.characteristic_user_description" UUID="2901">
+      <Field Name="User Description">
+        <DataFormat>utf8s</DataFormat>
+        <ByteLength>15</ByteLength>
+        <ValueType>BASIC</ValueType>
+        <GeneralValue>Thermister Trim</GeneralValue>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="false" Mandatory="false" />
+      </Properties>
+      <Permission />
+    </CyDescriptor>
+    <Field Name="New field">
+      <DataFormat>sint16</DataFormat>
+      <ByteLength>2</ByteLength>
+      <ValueType>BASIC</ValueType>
+      <ArrayValue />
+    </Field>
+    <Properties>
+      <Property Type="BROADCAST" Present="false" Mandatory="false" />
+      <Property Type="READ" Present="true" Mandatory="false" />
+      <Property Type="WRITE" Present="true" Mandatory="false" />
+      <Property Type="WRITE_WITHOUT_RESPONSE" Present="false" Mandatory="false" />
+      <Property Type="NOTIFY" Present="true" Mandatory="false" />
+      <Property Type="INDICATE" Present="false" Mandatory="false" />
+      <Property Type="AUTHENTICATED_SIGNED_WRITES" Present="false" Mandatory="false" />
+      <Property Type="RELIABLE_WRITE" Present="false" Mandatory="false" />
+      <Property Type="WRITABLE_AUXILIARIES" Present="false" Mandatory="false" />
+    </Properties>
+    <Permission>
+      <AccessPermission>READ_WRITE</AccessPermission>
+    </Permission>
+  </CyCharacteristic>
+  <CyCharacteristic ID="79" DisplayName="contrast" Name="Custom Characteristic" Type="org.bluetooth.characteristic.custom" UUID="0000000000001000800000805F9B3408">
+    <CyDescriptor ID="80" DisplayName="CCCD" Name="Client Characteristic Configuration" Type="org.bluetooth.descriptor.gatt.client_characteristic_configuration" UUID="2902">
+      <Field Name="Properties">
+        <DataFormat>16bit</DataFormat>
+        <ByteLength>2</ByteLength>
+        <Range>
+          <IsDeclared>true</IsDeclared>
+          <Minimum>0</Minimum>
+          <Maximum>3</Maximum>
+        </Range>
+        <ValueType>BITFIELD</ValueType>
+        <Bit>
+          <Index>0</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Notifications disabled" />
+            <Enumeration key="1" value="Notifications enabled" />
+          </Enumerations>
+        </Bit>
+        <Bit>
+          <Index>1</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Indications disabled" />
+            <Enumeration key="1" value="Indications enabled" />
+          </Enumerations>
+        </Bit>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="true" Mandatory="false" />
+      </Properties>
+      <Permission>
+        <AccessPermission>READ_WRITE</AccessPermission>
+      </Permission>
+    </CyDescriptor>
+    <CyDescriptor ID="81" DisplayName="Characteristic User Description" Name="Characteristic User Description" Type="org.bluetooth.descriptor.gatt.characteristic_user_description" UUID="2901">
+      <Field Name="User Description">
+        <DataFormat>utf8s</DataFormat>
+        <ByteLength>12</ByteLength>
+        <ValueType>BASIC</ValueType>
+        <GeneralValue>LCD Contrast</GeneralValue>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="false" Mandatory="false" />
+      </Properties>
+      <Permission />
+    </CyDescriptor>
+    <Field Name="New field">
+      <DataFormat>uint8</DataFormat>
+      <ByteLength>1</ByteLength>
+      <ValueType>BASIC</ValueType>
+      <ArrayValue />
+    </Field>
+    <Properties>
+      <Property Type="BROADCAST" Present="false" Mandatory="false" />
+      <Property Type="READ" Present="true" Mandatory="false" />
+      <Property Type="WRITE" Present="true" Mandatory="false" />
+      <Property Type="WRITE_WITHOUT_RESPONSE" Present="false" Mandatory="false" />
+      <Property Type="NOTIFY" Present="true" Mandatory="false" />
+      <Property Type="INDICATE" Present="false" Mandatory="false" />
+      <Property Type="AUTHENTICATED_SIGNED_WRITES" Present="false" Mandatory="false" />
+      <Property Type="RELIABLE_WRITE" Present="false" Mandatory="false" />
+      <Property Type="WRITABLE_AUXILIARIES" Present="false" Mandatory="false" />
+    </Properties>
+    <Permission>
+      <AccessPermission>READ_WRITE</AccessPermission>
+    </Permission>
+  </CyCharacteristic>
+  <CyCharacteristic ID="82" DisplayName="bootload" Name="Custom Characteristic" Type="org.bluetooth.characteristic.custom" UUID="0000000000001000800000805F9B3409">
+    <CyDescriptor ID="83" DisplayName="Characteristic User Description" Name="Characteristic User Description" Type="org.bluetooth.descriptor.gatt.characteristic_user_description" UUID="2901">
+      <Field Name="User Description">
+        <DataFormat>utf8s</DataFormat>
+        <ByteLength>14</ByteLength>
+        <ValueType>BASIC</ValueType>
+        <GeneralValue>Start Bootload</GeneralValue>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="false" Mandatory="false" />
+      </Properties>
+      <Permission />
+    </CyDescriptor>
+    <Field Name="New field">
+      <DataFormat>uint8</DataFormat>
+      <ByteLength>1</ByteLength>
+      <ValueType>BASIC</ValueType>
+      <ArrayValue />
+    </Field>
+    <Properties>
+      <Property Type="BROADCAST" Present="false" Mandatory="false" />
+      <Property Type="READ" Present="true" Mandatory="false" />
+      <Property Type="WRITE" Present="true" Mandatory="false" />
+      <Property Type="WRITE_WITHOUT_RESPONSE" Present="false" Mandatory="false" />
+      <Property Type="NOTIFY" Present="false" Mandatory="false" />
+      <Property Type="INDICATE" Present="false" Mandatory="false" />
+      <Property Type="AUTHENTICATED_SIGNED_WRITES" Present="false" Mandatory="false" />
+      <Property Type="RELIABLE_WRITE" Present="false" Mandatory="false" />
+      <Property Type="WRITABLE_AUXILIARIES" Present="false" Mandatory="false" />
+    </Properties>
+    <Permission>
+      <AccessPermission>READ_WRITE</AccessPermission>
+    </Permission>
+  </CyCharacteristic>
+  <CyCharacteristic ID="84" DisplayName="display" Name="Custom Characteristic" Type="org.bluetooth.characteristic.custom" UUID="0000000000001000800000805F9B340a">
+    <CyDescriptor ID="85" DisplayName="CCCD" Name="Client Characteristic Configuration" Type="org.bluetooth.descriptor.gatt.client_characteristic_configuration" UUID="2902">
+      <Field Name="Properties">
+        <DataFormat>16bit</DataFormat>
+        <ByteLength>2</ByteLength>
+        <Range>
+          <IsDeclared>true</IsDeclared>
+          <Minimum>0</Minimum>
+          <Maximum>3</Maximum>
+        </Range>
+        <ValueType>BITFIELD</ValueType>
+        <Bit>
+          <Index>0</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Notifications disabled" />
+            <Enumeration key="1" value="Notifications enabled" />
+          </Enumerations>
+        </Bit>
+        <Bit>
+          <Index>1</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Indications disabled" />
+            <Enumeration key="1" value="Indications enabled" />
+          </Enumerations>
+        </Bit>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="true" Mandatory="false" />
+      </Properties>
+      <Permission>
+        <AccessPermission>READ_WRITE</AccessPermission>
+      </Permission>
+    </CyDescriptor>
+    <CyDescriptor ID="86" DisplayName="Characteristic User Description" Name="Characteristic User Description" Type="org.bluetooth.descriptor.gatt.characteristic_user_description" UUID="2901">
+      <Field Name="User Description">
+        <DataFormat>utf8s</DataFormat>
+        <ByteLength>7</ByteLength>
+        <ValueType>BASIC</ValueType>
+        <GeneralValue>Display</GeneralValue>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="false" Mandatory="false" />
+      </Properties>
+      <Permission />
+    </CyDescriptor>
+    <Field Name="New field">
+      <DataFormat>uint16</DataFormat>
+      <ByteLength>2</ByteLength>
+      <ValueType>BASIC</ValueType>
+      <ArrayValue />
+    </Field>
+    <Properties>
+      <Property Type="BROADCAST" Present="false" Mandatory="false" />
+      <Property Type="READ" Present="true" Mandatory="false" />
+      <Property Type="WRITE" Present="true" Mandatory="false" />
+      <Property Type="WRITE_WITHOUT_RESPONSE" Present="false" Mandatory="false" />
+      <Property Type="NOTIFY" Present="true" Mandatory="false" />
+      <Property Type="INDICATE" Present="false" Mandatory="false" />
+      <Property Type="AUTHENTICATED_SIGNED_WRITES" Present="false" Mandatory="false" />
+      <Property Type="RELIABLE_WRITE" Present="false" Mandatory="false" />
+      <Property Type="WRITABLE_AUXILIARIES" Present="false" Mandatory="false" />
+    </Properties>
+    <Permission>
+      <AccessPermission>READ_WRITE</AccessPermission>
+    </Permission>
+  </CyCharacteristic>
+  <CyCharacteristic ID="87" DisplayName="temperature" Name="Temperature" Type="org.bluetooth.characteristic.temperature" UUID="2A6E">
+    <CyDescriptor ID="88" DisplayName="CCCD" Name="Client Characteristic Configuration" Type="org.bluetooth.descriptor.gatt.client_characteristic_configuration" UUID="2902">
+      <Field Name="Properties">
+        <DataFormat>16bit</DataFormat>
+        <ByteLength>2</ByteLength>
+        <Range>
+          <IsDeclared>true</IsDeclared>
+          <Minimum>0</Minimum>
+          <Maximum>3</Maximum>
+        </Range>
+        <ValueType>BITFIELD</ValueType>
+        <Bit>
+          <Index>0</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Notifications disabled" />
+            <Enumeration key="1" value="Notifications enabled" />
+          </Enumerations>
+        </Bit>
+        <Bit>
+          <Index>1</Index>
+          <Size>1</Size>
+          <Value>0</Value>
+          <Enumerations>
+            <Enumeration key="0" value="Indications disabled" />
+            <Enumeration key="1" value="Indications enabled" />
+          </Enumerations>
+        </Bit>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="true" Mandatory="false" />
+      </Properties>
+      <Permission>
+        <AccessPermission>READ_WRITE</AccessPermission>
+      </Permission>
+    </CyDescriptor>
+    <CyDescriptor ID="89" DisplayName="Characteristic User Description" Name="Characteristic User Description" Type="org.bluetooth.descriptor.gatt.characteristic_user_description" UUID="2901">
+      <Field Name="User Description">
+        <DataFormat>utf8s</DataFormat>
+        <ByteLength>11</ByteLength>
+        <ValueType>BASIC</ValueType>
+        <GeneralValue>Temperature</GeneralValue>
+        <ArrayValue />
+      </Field>
+      <Properties>
+        <Property Type="READ" Present="true" Mandatory="false" />
+        <Property Type="WRITE" Present="false" Mandatory="false" />
+      </Properties>
+      <Permission />
+    </CyDescriptor>
+    <Field Name="Temperature">
+      <DataFormat>sint16</DataFormat>
+      <ByteLength>2</ByteLength>
+      <Unit>org.bluetooth.unit.thermodynamic_temperature.degree_celsius</Unit>
+      <ValueType>BASIC</ValueType>
+      <ArrayValue />
+    </Field>
+    <Properties>
+      <Property Type="BROADCAST" Present="false" Mandatory="false" />
+      <Property Type="READ" Present="true" Mandatory="false" />
+      <Property Type="WRITE_WITHOUT_RESPONSE" Present="false" Mandatory="false" />
+      <Property Type="WRITE" Present="false" Mandatory="false" />
+      <Property Type="NOTIFY" Present="true" Mandatory="false" />
+      <Property Type="INDICATE" Present="false" Mandatory="false" />
+      <Property Type="AUTHENTICATED_SIGNED_WRITES" Present="false" Mandatory="false" />
+      <Property Type="RELIABLE_WRITE" Present="false" Mandatory="false" />
+      <Property Type="WRITABLE_AUXILIARIES" Present="false" Mandatory="false" />
+    </Properties>
+    <Permission />
+  </CyCharacteristic>
+  <Declaration>PrimarySingleInstance</Declaration>
+  <IncludedServices />
+</CyProfileTreeItem>

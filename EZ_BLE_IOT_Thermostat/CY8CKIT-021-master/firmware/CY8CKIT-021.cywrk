@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspc" version="5" xml_contents_version="3" name="CY8CKIT-021" persistent="" platform="NOT_USED">
+<current_project name=".\IoT_Thermostat.cydsn\IoT_Thermostat.cyprj" />
+<wrkspc_folders />
+<files />
+<projects>
+<v>.\IoT_Thermostat.cydsn\IoT_Thermostat.cyprj</v>
+<v>.\ble-iotapp.cydsn\ble-iotapp.cyprj</v>
+<v>.\I2C_Bootloader.cydsn\I2C_Bootloader.cyprj</v>
+<v>.\BLEInterface.cylib\BLEInterface.cyprj</v>
+</projects>
+<workspace_id v="8f071ebc-6bce-4fa7-85d4-1732aa674a3e" />
+<WriteAppVersionLastSavedWith v="3.3.0.9604" />
+<WriteAppMarketingVersionLastSavedWith v="3.3 SP2" />
+<CyGuid_dcbd9771-0334-43dc-9cc3-fe99dc3c5316 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjDependencyList" version="4">
+<wrkspc_dependencies>
+<wrkspc_dependency project="IoT_Thermostat.cydsn\IoT_Thermostat.cyprj" dependency=".\BLEInterface.cylib\BLEInterface.cyprj" />
+</wrkspc_dependencies>
+</CyGuid_dcbd9771-0334-43dc-9cc3-fe99dc3c5316>
+<CyGuid_63b68103-67f5-4406-8da6-5c8625765b82 type_name="CyDesigner.Common.ProjMgmt.Model.CyIgnoredSystemDepsList" version="1">
+<wrkspc_dependencies />
+</CyGuid_63b68103-67f5-4406-8da6-5c8625765b82>
+</CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd>
+</CyXmlSerializer>
